@@ -8,6 +8,7 @@
 
   imports = [
     ./modules/nvim
+    ./modules/tig.nix
   ];
 
   home.packages = with pkgs; [
@@ -18,7 +19,6 @@
     htop
     delta
     sdcv
-    tig
     wrk
     yt-dlp
     python39
