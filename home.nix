@@ -7,6 +7,7 @@
 
 
   imports = [
+    ./modules/zsh
     ./modules/nvim
     ./modules/tig.nix
   ];
