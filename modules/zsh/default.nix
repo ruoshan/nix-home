@@ -11,10 +11,8 @@
     '';
     initExtra = builtins.readFile ./zshrc;
     profileExtra = ''
-      # Nix
       if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
-        . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
-        export MANPATH="$HOME/.nix-profile/share/man:/nix/var/nix/profiles/default/share/man:$MANPATH"
+        source '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
       fi
     '';
   };
