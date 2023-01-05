@@ -20,35 +20,11 @@ fi
 export MANPATH="$JAVA_HOME/man:`manpath`"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ -s ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-[[ ! -f ~/.sudo.zsh ]] || source ~/.sudo.zsh
+[[ -s ~/.sudo.zsh ]] && source ~/.sudo.zsh
 
 # Secretive app
 #export SSH_AUTH_SOCK=/Users/r3/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-
-# pyenv
-export PATH="/Users/r3/.pyenv/shims:${PATH}"
-eval "$(pyenv init -)"
-
-# rbenv
-eval "$(rbenv init - zsh)"
-
-# direnv
-eval "$(direnv hook zsh)"
-
-# sdkman
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 compdef _kubectl k
-
-# Nix
-if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
-  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
-  export MANPATH="$HOME/.nix-profile/share/man:/nix/var/nix/profiles/default/share/man:$MANPATH"
-fi

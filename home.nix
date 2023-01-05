@@ -13,6 +13,8 @@
   ];
 
   home.packages = with pkgs; [
+    exa
+    bat
     bashInteractive
     fzf
     ripgrep
