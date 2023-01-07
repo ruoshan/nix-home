@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   home.username = "r3";
@@ -10,6 +10,7 @@
     ./modules/zsh
     ./modules/nvim
     ./modules/tig.nix
+    ./modules/minidlna
   ];
 
   home.packages = with pkgs; [
