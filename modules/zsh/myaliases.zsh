@@ -40,6 +40,7 @@ alias m="mvn"
 alias .net="dotnet"
 alias nix="noglob nix"
 alias hm="home-manager"
+alias vf='nvim $(fzf --reverse --height=20)'
 
 alias ticdir="cd ~/Library/Application\ Support/com.nesbox.tic/TIC-80"
 
