@@ -11,6 +11,7 @@
     ./modules/nvim
     ./modules/tig.nix
     ./modules/minidlna
+    ./modules/git
   ];
 
   home.packages = with pkgs; [

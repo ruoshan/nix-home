@@ -1,0 +1,46 @@
+[alias]
+	co = checkout
+	b = branch
+	s = status
+	df = diff
+	r = remote
+	re = rebase
+	c = commit
+	k = clone
+    p = pull
+    ps = push
+    branch-name = "!git rev-parse --abbrev-ref HEAD"
+    publish = "!git push -u origin $(git branch-name)"
+    unpublish = "!git push origin :$(git branch-name)"
+[core]
+	hooksPath = /Users/r3/.githooks
+	editor = nvim
+	commentchar = ";"
+[user]
+	email = ruoshan.huang@gmail.com
+	name = Ruoshan Huang
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+
+# delta differ
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+    line-number = true
+    side-by-side = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[commit]
+	verbose = true
