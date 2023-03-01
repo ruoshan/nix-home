@@ -8,6 +8,7 @@
     };
     envExtra = ''
       export PATH="$PATH:$HOME/.local/bin"
+      export CDPATH="$HOME/Workplace/git"
     '';
     initExtra = builtins.readFile ./zshrc;
     profileExtra = ''
