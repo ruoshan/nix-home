@@ -15,6 +15,15 @@
   ];
 
   home.packages = with pkgs; [
+    kubectl
+    tmate
+    docker-client
+    docker-compose
+    hurl
+    rlwrap
+    pipenv
+    httpie
+    mitmproxy
     exa
     bat
     bashInteractive
