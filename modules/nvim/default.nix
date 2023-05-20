@@ -1,7 +1,7 @@
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
-  home.file.".config/nvim".source = ./. ;
+  home.file.".config/nvim".source = ./.;
 
   programs.neovim = {
     enable = true;
