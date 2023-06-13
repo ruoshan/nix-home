@@ -37,11 +37,11 @@
     sdcv
     wrk
     yt-dlp
-    python39
-    python39Packages.pip
-    python39Packages.pipx
+    (python310.withPackages(ps: [
+      ps.pipx
+    ]))
     qemu
-    lima
+    lima-bin
     colima
   ];
 
