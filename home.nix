@@ -15,21 +15,19 @@
   ];
 
   home.packages = with pkgs; [
+    # tools
+    qemu
+    lima-bin
     wget
     nginx
-    kubectl
     tmate
-    docker-client
-    docker-compose
     hurl
     rlwrap
-    pipenv
     httpie
     mitmproxy
     exa
     bat
     bashInteractive
-    fzf
     ripgrep
     fd
     htop
@@ -37,12 +35,20 @@
     sdcv
     wrk
     yt-dlp
+
+    # container
+    docker-client
+    docker-compose
+    kubectl
+    colima
+
+    # lang
     (python310.withPackages(ps: [
       ps.pipx
     ]))
-    qemu
-    lima-bin
-    colima
+    gore
+    pipenv
+
   ];
 
   programs.home-manager.enable = true;
