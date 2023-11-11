@@ -5,6 +5,19 @@
     prezto = {
       enable = true;
       prompt.theme = "powerlevel10k";
+      pmodules = [
+        "environment"
+        "terminal"
+        "editor"
+        "history"
+        "directory"
+        "spectrum"
+        "utility"
+        "completion"
+        "prompt"
+        "osx"
+        "history-substring-search"
+      ];
     };
     envExtra = ''
       export PATH="$PATH:$HOME/.local/bin"
