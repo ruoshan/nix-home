@@ -16,6 +16,7 @@
 
   home.packages = with pkgs; [
     # tools
+    ldns
     qemu
     lima-bin
     wget
@@ -49,6 +50,8 @@
     gore
     pipenv
 
+    # java
+    jadx
   ];
 
   programs.home-manager.enable = true;

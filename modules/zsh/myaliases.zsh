@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+alias rm="rm -Iv"
 alias g=git
 alias b=brew
 alias cat="bat -pp"
