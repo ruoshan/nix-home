@@ -5,7 +5,7 @@
     nixpkgs.url = "nixpkgs/nixos-23.05";
     nixpkgs-unstable.url = "nixpkgs";
     home-manager = {
-      url = "home-manager";
+      url = "home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
