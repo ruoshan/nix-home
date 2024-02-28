@@ -49,6 +49,9 @@
     ]))
     gore
     pipenv
+    rustc
+    rustfmt
+    cargo
 
     # java
     jadx
